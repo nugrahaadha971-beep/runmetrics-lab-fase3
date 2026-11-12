@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background-color: var(--bg-from);
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-bg-from font-sans text-text-main antialiased;
+    margin: 0;
+  }
+  button {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-cyan;
+  }
+}
